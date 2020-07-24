@@ -1,6 +1,6 @@
 # Time_Series-Hello-World
 This Repo has various approaches for a time series problem encountered in deep learning.  
-## File : Helper_function.py
+## File : Helper_Functions.py
 - This file contains two python functions to convert time-series to supervised learning dataset.(Function Name = series_to_supervised)    
   and to create test dataset for the case of univariate time-series.(Function name = create_test_lag)  
   
