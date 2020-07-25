@@ -56,3 +56,15 @@ def create_lag_test(len_test,train_wd,lag=1):
 
 # Work of Mohd Danish Khurseed -- Read the documentation (README.md)
 ########################################################################################################################################################################################
+
+# create a differenced series
+def difference(dataset, interval=1):
+	diff = list()
+	for i in range(interval, len(dataset)):
+		value = dataset[i] - dataset[i - interval]
+		diff.append(value)
+	return Series(diff)
+
+diff_series = difference(raw_values, 1)
+diff_values = diff_series.values
+diff_values = diff_values.reshape(len(diff_values), 1)
